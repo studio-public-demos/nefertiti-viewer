@@ -4,6 +4,8 @@ This project is a high-performance, real-time 3D visualization of the iconic **B
 
 [▶ Open Live 3D Viewer](https://studio-public-demos.github.io/nefertiti-viewer/)
 
+[![Nefertiti Bust Viewer](thumbnail.png)](https://studio-public-demos.github.io/nefertiti-viewer/)
+
 ---
 
 ## The Story
