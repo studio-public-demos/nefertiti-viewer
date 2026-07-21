@@ -7,7 +7,7 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: #f0f0f0; color: #333; font-family: system-ui, -apple-system, sans-serif; }
-#viewer-container { width: 100%; height: 100vh; position: relative; }
+#viewer-container { width: 100%; height: 90vh; position: relative; }
 canvas { display: block; }
 
 #loading {
@@ -93,11 +93,9 @@ canvas { display: block; }
 .action-btn:hover { background: rgba(0,0,0,0.1); color: #000; }
 .action-btn.active { background: rgba(200,160,80,0.2); border-color: rgba(200,160,80,0.4); color: #c8a050; }
 
-/* --- Data Source Attribution (bottom-left) --- */
+/* --- Data Source Attribution --- */
 .src-attribution {
-  position: absolute; bottom: 16px; left: 16px; z-index: 10;
-  font-size: 11px; color: #666; background: rgba(255,255,255,0.7);
-  padding: 8px 12px; border-radius: 8px; max-width: 300px;
+  padding: 16px; font-size: 11px; color: #555; text-align: center;
 }
 .src-attribution a { color: #5a7abc; text-decoration: none; }
 </style>
@@ -184,7 +182,11 @@ canvas { display: block; }
   <div id="controls-hint">Drag to orbit &bull; Scroll to zoom &bull; Right-drag to pan</div>
 </div>
 
-<footer><a href="https://nebulacloud.studio">Built with NebulaCloud Studio</a></footer>
+<div class="src-attribution">
+  <strong>3D Model:</strong> Nefertiti Bust, CC BY 4.0, derived from photogrammetric scans.<br>
+  <strong>Original:</strong> Egyptian Museum of Berlin, Inv. No. 21300. Workshop of Thutmose, Amarna, c. 1345 BCE.<br>
+  <strong>Viewer built with</strong> Three.js. <a href="https://github.com/studio-public-demos/nefertiti-viewer" target="_blank">Source on GitHub</a>
+</div>
 
 <script type="importmap">
 {
