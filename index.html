@@ -7,7 +7,7 @@
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { background: #0a0a14; color: #d4c5a9; font-family: system-ui, -apple-system, sans-serif; }
-#viewer-container { width: 100%; height: 80vh; position: relative; }
+#viewer-container { width: 100%; height: 100vh; position: relative; }
 canvas { display: block; }
 
 #loading {
@@ -93,27 +93,6 @@ canvas { display: block; }
 .action-btn:hover { background: rgba(200,184,152,0.15); color: #fff; }
 .action-btn.active { background: rgba(200,184,152,0.2); border-color: rgba(200,184,152,0.4); color: #c8a050; }
 
-/* --- About section below --- */
-#about-section { padding: 48px 24px; max-width: 780px; margin: 0 auto; line-height: 1.7; }
-#about-section h2 { font-size: 26px; margin-bottom: 16px; color: #fff; text-align: center; }
-#about-section h3 { font-size: 18px; margin: 28px 0 10px; color: #c8a050; }
-#about-section p { margin-bottom: 16px; }
-#about-section ul { margin-left: 24px; margin-bottom: 16px; }
-#about-section li { margin-bottom: 8px; }
-.cta-btn {
-  display: inline-block; padding: 14px 28px; background: #c8a050; color: #0a0a14;
-  text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 15px;
-  margin-top: 12px; transition: background 0.2s;
-}
-.cta-btn:hover { background: #dab860; }
-.cta-wrap { text-align: center; margin-top: 24px; }
-
-.src-attribution {
-  margin-top: 32px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.06);
-  font-size: 12px; color: #555;
-}
-.src-attribution a { color: #5a7abc; text-decoration: none; }
-
 footer { text-align: center; padding: 20px; font-size: 11px; opacity: 0.3; color: #888; }
 footer a { color: #5a7abc; text-decoration: none; }
 
@@ -122,8 +101,6 @@ footer a { color: #5a7abc; text-decoration: none; }
   .nav-btn { width: 26px; height: 26px; font-size: 11px; }
   .nav-grid { grid-template-columns: repeat(3, 26px); gap: 2px; }
   #story-panel { max-width: none; width: calc(100vw - 24px); }
-  #about-section { padding: 32px 16px; }
-  #about-section h2 { font-size: 20px; }
 }
 </style>
 </head>
@@ -207,28 +184,6 @@ footer a { color: #5a7abc; text-decoration: none; }
   </div>
 
   <div id="controls-hint">Drag to orbit &bull; Scroll to zoom &bull; Right-drag to pan</div>
-</div>
-
-<div id="about-section">
-  <h2>About this Project &amp; NebulaCloud Studio</h2>
-  <p>This interactive 3D monument viewer is a demonstration of high-performance web-based visualization, built to showcase the capabilities of <strong>NebulaCloud Studio</strong>.</p>
-
-  <h3>NebulaCloud Studio</h3>
-  <p>NebulaCloud Studio is the ultimate platform for architects, 3D artists, and developers to bridge the gap between high-fidelity 3D assets and accessible web-based deployment.</p>
-  <ul>
-    <li><strong>Elevate Client Presentations:</strong> Provide your clients with a browser-based, interactive 3D experience accessible on any device, instantly.</li>
-    <li><strong>Showcase Your Capabilities:</strong> Build a world-class digital portfolio without the headache of complex web infrastructure.</li>
-    <li><strong>Rapid Deployment:</strong> We handle the logistics, so you can go from model to live demo in minutes.</li>
-  </ul>
-  <div class="cta-wrap">
-    <a href="https://nebulacloud.studio" target="_blank" class="cta-btn">Join the Waitlist</a>
-  </div>
-
-  <div class="src-attribution">
-    <strong>3D Model:</strong> Nefertiti Bust, CC BY 4.0, derived from photogrammetric scans.<br>
-    <strong>Original:</strong> Egyptian Museum of Berlin, Inv. No. 21300. Workshop of Thutmose, Amarna, c. 1345 BCE.<br>
-    <strong>Viewer built with</strong> Three.js. <a href="https://github.com/studio-public-demos/nefertiti-viewer" target="_blank">Source on GitHub</a>
-  </div>
 </div>
 
 <footer><a href="https://nebulacloud.studio">Built with NebulaCloud Studio</a></footer>
